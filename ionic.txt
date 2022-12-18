@@ -1,0 +1,12 @@
+ionic generate
+ionic generate page
+ionic generate page contact
+ionic generate component contact/form
+ionic generate component login-form --change-detection=OnPush
+ionic generate directive ripple --skip-import
+ionic generate service api/user
+
+
+The type of feature (e.g. page, component, directive, service)
+
+ionic generate page pages/entrance/walkthrough/walk-through-step1  --module layouts/main/main.module

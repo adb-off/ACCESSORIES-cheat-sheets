@@ -1,0 +1,10 @@
+DROP DATABASE IF EXISTS "jobFinderDB";
+CREATE DATABASE "jobFinderDB";
+
+=================================================
+
+CREATE SCHEMA IF NOT EXISTS "UTILITY";
+CREATE SCHEMA IF NOT EXISTS "AUTH";
+CREATE SCHEMA IF NOT EXISTS "USER";
+
+refer to D:\projects\01 job-finder\back\src\entities\create-schema.qry

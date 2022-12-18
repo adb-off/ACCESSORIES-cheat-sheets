@@ -1,0 +1,20 @@
+	@HostBinding('className') hostClassName: string;
+	public appDirection: string;
+	-------------------------------------------------------------
+    appState.select(selectAppDirection).subscribe((val) => {
+      this.hostClassName = 'app-' + val;
+      this.appDirection = val;
+      // (document.body as HTMLElement).setAttribute('dir', val);
+      // if (this.slides) { this.slides.update().then(); };
+    });
+	-------------------------------------------------------------
+    :host.app-rtl & {
+      left: unset;
+      right: 15px;
+    }
+	=============================================================
+	ion-app.rtl-app	
+	
+	  ion-app.app-rtl & {
+		direction: rtl;
+	  }	
